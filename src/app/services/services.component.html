@@ -1,0 +1,35 @@
+<div class="container">
+<h1>Services component</h1>
+<p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+
+<nav class="navbar navbar-expand-lg navbar-primary bg-dark">
+        
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" [routerLink]="['/s1']">s1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/s2']">s2</a>
+        </li>
+   
+        <li class="nav-item">
+          <a class="nav-link"  [routerLink]="['/s3']">s3</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--navbar--> 
+<div class="container-fluid"> 
+     <div class="row">
+      <div class="col-lg-7"></div>
+      <div class="col-lg-3">
+          <div class="container">
+        <router-outlet></router-outlet>
+    </div></div>
+</div>
+  </div>
+</div>
